@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-09 -->
+    <script>
+        // 사용자가 이미 등록한 아이디, 비번 데이터베이스 역할(DB)
+        var userId = "abc";
+        var userPw = '123456789';
+
+        // 사용자가 현재 입력하는 변수
+        var ID = prompt("아이디는 ?","");
+        var PW = prompt("비밀번호는?","");
+        
+        if(userId==ID){
+            // 중첩IF사용
+            if(userPw==PW){
+                document.write(`${ID}님 환영합니다.`);
+            }else{
+                alert(`비밀번호가 일치하지 않습니다.`);
+                location.reload(); //브라우저 새로고침 F5와 같은 기능
+            }
+        }else{
+            alert("아이디가 일치하지 않습니다.");
+            location.reload();
+        }
+    </script>
+    <title>중첩if문</title>
+</head>
+<body>
+    
+</body>
+</html>

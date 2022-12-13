@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-07 -->
+    <script>
+        var a=10;
+        var b=20;
+        var c=10;
+        var d='20';
+        var result;
+
+        result=a>b; //Q. 결과값 선언 - a가 b보다 크다 (초과)
+        console.log(result); //fasle or true
+
+        result=a<b;
+        console.log(result); 
+
+        result=a==c; //Q. 결과값 선언 - a와 c가 같다. (type은 제외)
+        console.log(result); 
+
+        result=b==d
+        console.log(result); //type을 제외한 값만 같은지 비교(결과 값 True)
+
+        result=b===d
+        console.log(result); //자료형은 type 종류까지 확인하여 비교(결과 값 false)
+        document.write(result);
+
+        result=a!==c;
+        console.log(result); //값이 달라야 하는데 같아서 false
+    </script>
+    <title>비교 연산자</title>
+</head>
+<body>
+    
+</body>
+</html>

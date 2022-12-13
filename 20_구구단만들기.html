@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-12 -->
+    <style>
+        table {
+            float: left;
+            margin: 20px;
+        }
+        table,th {
+            border: 1px solid #ccc;
+            border-collapse: collapse; /*collapse는 보더 사이의 간격을 없애준다.*/
+        }
+        th,td {
+            padding: 10px 15px;
+        }
+        th {
+            background: #eee;
+        }
+        td {
+            border: thin dotted #333;
+        }
+    </style>
+    <title>구구단 만들기</title>
+</head>
+<body>
+    <h1>구구단</h1>
+    <script>
+        // javascript가 위에 있으면 먼저 실행하기 때문에 html을 먼저 실행하고 싶다면 html 아래로 배치하면 된다. 
+        for(i=2; i<=9; i++){
+            document.write(`<table>`);
+            document.write(`<tr><th>${i}단</th></tr>`);
+            for(j=1; j<=9; j++){
+                document.write(`<tr><td>${i}×${j}=${i*j}</td></tr>`);
+            }
+            document.write(`</table>`);
+        }
+    </script>
+</body>
+</html>

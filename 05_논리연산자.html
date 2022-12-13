@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var a=10;
+        var b=20;
+        var c=30;
+        var d=40;
+        var result;
+
+        // or은 조건 중에 1개만 true가 나오면 최종 값은 true
+        result=a<b || b>=c || c>d;  // true false false => 결과 값 true
+        document.write(result, "<br>");
+
+        //and는 조건 중에 모든 조건이 true여야 true이다.
+        result=a<b && b>=c && c<=d; //true false true => 결과값 false
+        document.write(result,"<br>"); 
+
+        // not은 조건을 반대로 처리 true=>false, falsae=>true
+        result=!(a>b);
+        document.write(result,"<br>");
+    </script>
+    <title>논리 연산자</title>
+</head>
+<body>
+    
+</body>
+</html>

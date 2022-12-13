@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-08 -->
+    <script>
+        // else는 조건이 필요 없으나 else if는 새로운 조건을 추가하여야 함. 
+        var num = Number(prompt("점수를 입력하세요",75));
+
+        if(num>=90){
+            document.write("A학점");
+        }else if(num>=80){
+            document.write("B학점");
+        }else if(num>=70){
+            document.write("C학점");
+        }else if(num>=60){
+            document.write("D학점");
+        }else{
+            document.write("F학점");
+        }
+        document.write(`당신의 점수는 ${num} 입니다. 당신의 학점은 `);
+        //백틱(`)사이에 모든 문장을 입력 후 ${값}을 입력하면 텍스트가 아닌 속성값으로 부여가 가능하다.  
+    </script>
+    <title>조건문 else if문</title>
+</head>
+<body>
+    
+</body>
+</html>

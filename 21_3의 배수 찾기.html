@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-12 -->
+    <style> 
+        h2{
+            margin-left: 120px;
+        }
+        h3{
+            margin-left: 50px;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+    <title>3의 배수 찾기</title>
+</head>
+<body>
+    <h2>3의 배수 찾기</h2>
+    <!-- 내 답안 -->
+    <script>
+    //     var num;
+    //     num = prompt('몇 까지 3의 배수를 찾을까요?','50');
+    //     for(i=3; i<=50; i++){
+    //         if(i%3===0){
+    //             document.write(`${i}, `);
+    //         }
+    //     }
+    //     document.write(`<h3>50까지의 3의 배수의 개수 : ${num}</h3>`);
+    </script>
+
+    <!-- 선생님 답안 -->
+    <script>
+        // propt 없는 버전
+        // var count = 0;
+
+        // // 3의 배수를 구해라
+        // for(a=1; a<=50; a++){
+        //     if(a%3===0){
+        //         document.write(`${a} `);
+        //         count++; //이 조건(if조건)에 해당되는 카운터(개수에 따라 총 수량 추가) 증가
+        //     }
+        // }
+        // document.write(`<br> 50까지의 숫자에서 3의 배수 개수는? ${count}`);
+        
+        // propt에서 입력갑슬 받아서 카운트를 적용하고 싶을 경우
+        // 선언한 propt의 함수를 for(반복문)의 조건에 적용을 해야 propt에 값을 입력했을 때 연결이 된다.
+        var count = 0;
+        var num = prompt("숫자를 입력해주세요","50");
+
+        // 3의 배수를 구해라
+        for(a=1; a<=num; a++){
+            if(a%3===0){
+                document.write(`${a} `);
+                count++; //이 조건(if조건)에 해당되는 카운터(개수에 따라 총 수량 추가) 증가
+            }
+        }
+        document.write(`<br> 50까지의 숫자에서 3의 배수 개수는? ${count}`);
+    </script>
+</body>
+</html>
