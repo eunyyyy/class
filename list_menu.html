@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        /* 가상 클래스 선택자 */
+    li {
+    display: block;
+    border: 1px solid #666;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    }
+    li:nth-child(3){
+        /* 앞에서부터 (숫자3번) 조건 부여 */
+        color: red;
+    }
+    li:nth-last-child(2){
+        /* 뒤에서부터 (숫자 2) 조건 부여 */
+        background: yellow;
+    }
+    /* 짝수(even 혹은 2n)만 조건 부여 */
+    li:nth-child(2n){
+        color: blue;
+        font-weight: bold;
+    }
+    /* 홀수(odd 혹은 2n+1, 2n-1)만 조건 부여 */
+    li:nth-child(2n-1){
+        border: 5px solid red;
+    }
+    li:nth-child(6n+2){
+        width: 150px;
+        border: 3px solid green;
+    }
+    </style>
+</head>
+<body>
+     <!-- 가상 클래스 선택자 -->
+     <div>
+        <ul class="sample">
+            <li>child1</li>
+            <li>child2</li>
+            <li>child3</li>
+            <li>child4</li>
+            <li>child5</li>
+            <li>child6</li>
+            <li>child7</li>
+            <li>child8</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>그라데이션</title>
+    <style>
+        div{
+            width: 450px;
+            height: 250px;
+            /* border: 1px solid black; */
+            float: left;
+            margin: 10px;
+        }
+        /* 그라데이션 처리 */
+        /* 구형 모던 브라우저에서 동작하지 않을 때 접두사를 붙여준다. */
+        .gra01{
+            background: linear-gradient(blue, pink);
+            /* 사파리 */
+            background: -webkit-linear-gradient(blue, pink);
+            /* 파이어폭스 */
+            background: -moz-linear-gradient(blue, pink);
+            /* 오페라 */
+            background: -o-linear-gradient(blue, pink);
+        }
+        /* to top :  */
+        .gra02{
+            background: linear-gradient(to top, blue, pink);
+        }
+        /* 오른쪽에서 */
+        .gra03{
+            background: linear-gradient(to right, blue, pink);
+        }
+        /* 45deg(45도) 각도 회전 */
+        .gra04{
+            background: linear-gradient(45deg,rgb(34 29 210), rgb(38 222 190));
+        }
+        /* circle : 써클은 정원으로 만들어주며 미적용시 타원으로 됨. */
+        .gra05{
+            background : radial-gradient(circle, pink, purple,red);
+        }
+        .gra06{
+            background : radial-gradient(pink, purple,red);
+        }
+        .gra07{
+            background : repeating-linear-gradient(135deg,pink, pink 20px,skyblue 20px, skyblue 40px);
+        }
+        .gra08{
+            background : linear-gradient(to bottom, blue, white 30%, blue)
+        }
+        .gra09{
+            background: repeating-radial-gradient(circle, yellow, red 80px);
+        }
+        .gra10{
+            background: repeating-radial-gradient(at right top, yellow, red 80px);
+        }
+        .gra11{
+            background:repeating-radial-gradient(circle at center top, pink,lightblue 60px);
+        }
+        .gra12{
+            background: repeating-radial-gradient(circle, gray,gray 20px, white 20px, white 40px);
+        }
+    </style>
+</head>
+<body>
+    <h2>기본 그라데이션</h2>
+    <div class="gra01"></div>
+    <div class="gra02"></div>
+    <div class="gra03"></div>
+    <div class="gra04"></div>
+    <div class="gra05"></div>
+    <div class="gra06"></div>
+    
+    <!-- <h2>반본 그라데이션</h2> -->
+    <div class="gra07"></div>
+    <div class="gra08"></div>
+    <div class="gra09"></div>
+    <div class="gra10"></div>
+    <div class="gra11"></div>
+    <div class="gra12"></div>
+</body>
+</html>

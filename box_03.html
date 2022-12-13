@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 스타일</title>
+    <style>
+        div{
+            width:280px;
+            height: 220px;
+            margin: 25px;
+            background:rgb(59, 95, 255);
+        }
+        #style1{
+            border: 5px dotted;
+            border-radius: 30px;
+            /* 박스 그림자 : x Y 블러 퍼짐정도(기본0) 블러 커지는 정도 */
+            box-shadow: 15px 10px 15px -5px;
+        }
+        #style2{
+            border-style: double solid dotted none;
+            border-color: red yellow green magenta;
+            border-width: 3px 5px 5px 10px;
+            /* 그림자 색상을 줄 수 있다. */
+            box-shadow: 15px 10px 15px -5px rgb(255, 120, 120);
+            opacity: 35%;
+        }
+        #style3{
+            border: 5px black;
+            border-style: double none;
+            /* 내부 그림자 : color + inset */
+            /* rgba (컬러값 뒤에 0~1까지 수치를 추가하면 불투명도 적용) */
+            box-shadow: 15px 10px 15px -5px rgba(61, 83, 0, 0.5);
+        }
+        #style4{
+            border: 5px red;
+            border-style: none double;
+            border-radius: 30px;
+            box-shadow: 25px 15px 15px -8px rgb(225, 228, 255)inset;
+        }
+        #box1{
+            border-radius: 30px;
+        }
+        #box2{
+            /* 둥근 모서리 : 왼쪽위 오른쪽위 오른쪽아래 왼쪽아래 */
+            /* 둥근 모서리 : 왼쪽위/오른쪽아래 오른쪽위/오른쪽아래 */
+            border-radius: 50px 0px;
+        }
+        #box3{
+            /* 둥근 모서리 : 왼쪽위/오른쪽아래 오른쪽위/오른쪽아래 */
+            border-radius: 50px 10px 30px;
+        }
+        #box4{
+            border-radius: 50px 50px 0px 0px;
+        }
+        #box_style1{
+            /* 
+            box-sizing 속성 - 실제 박스 모델의 너비를
+            계산할 때 포함할지 결정하는 속성
+            
+            border-box : 테두리까지 포함해서 너비값을 지정할 때
+            content-box : 콘텐츠 영역만 너비값을 지정할 때 (기본값)
+            */
+            background: palevioletred;
+            border: 40px solid red;
+            box-sizing: content-box;
+        }
+        #box_style2{
+            background: palevioletred;
+            border: 30px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="style1"></div>
+    <div id="style2"></div>
+    <div id="style3"></div>
+    <div id="style4"></div>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+
+    <div id="box_style1">content-box</div>
+    <div id="box_style2">border-box</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 33</title>
+    <style>
+        #wrap{
+            width: 600px;
+            margin:0 auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .box1{
+            width: 43%;
+            height: 100px;
+            padding: 10px;
+            float: left;
+            margin: 10px;
+
+            /* margin: 10px; */
+            background: pink;
+        }
+        .box2{
+            width: 43%;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+            background: palevioletred;
+
+        }
+        footer{
+            width: 97%;
+            height : 300px;
+            margin: 10px;
+            background: lemonchiffon;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="box1"></div>
+            <div class="box2"></div>           
+        </header>
+        <article>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </article>
+        <footer></footer> 
+    </div>
+</body>
+</html>

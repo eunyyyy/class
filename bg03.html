@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지 크기 설정</title>
+    <style>
+        #wrap{
+            width: 1100px;
+            margin: 50px auto;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border: 1px solid red;
+            float: left;
+            background: url(img/link.png) no-repeat left top;
+            color: white;
+        }
+        #bg2{
+            background-size: 200px;
+        }
+        #bg3{
+            /* 배경이미지 너비와 높이처리 - 하지만 비율이 깨지므로 둘 중 하나만 처리 */
+            background-size: 80% 100%;
+        }
+        #bg4{
+            /* 원래 배경이미지로 표시 */
+            background-size: auto;
+        }
+        #bg5{
+            /* contain은 가로 왼쪽을 기준으로 적용
+            요소 안에 배경이미지 너비에 맞춰서 다 보일 수 있게 처리
+            */
+            background-size: contain;
+        }
+        #bg6{
+            /* 비율이 깨지지 않은 상태로 크기에 맞게 채워짐 */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="bg1">원래 배경이미지</div>
+        <div class="box" id="bg2">배경이미지 200px</div>
+        <div class="box" id="bg3">배경 이미지 가로 80% 세로 100%</div>
+        <div class="box" id="bg4">배경 이미지 auto는 원래 배경이미지 사이즈</div>
+        <div class="box" id="bg5">배경 이미지 contain</div>
+        <div class="box" id="bg6">배경 이미지 cover</div>
+    </div>
+</body>
+</html>

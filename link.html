@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크걸기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "맑은 고딕";
+            font-size: 12px;
+            /* color: #464646; */
+        }
+        /* a 정식 명칭 a:link, a태그로 활용해서 처리 후 hover만 준다. */
+        a:link{
+            color: #464646;
+            text-decoration: none;
+        }
+        a:hover{
+            color: lightseagreen;
+            font-weight: bold;
+        }
+        /* 마우스 꾹 클릭할 때 색상이 변함, visited랑 컬러 동일하게 하는게 좋음.*/
+        a:active{
+            color: orange;
+        }
+        /* visited = link 클릭 후 돌아왔을 때 */
+        a:visited{
+            color:palevioletred
+        }
+        img{
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://daum.net">다음으로 가자</a><br>
+    <a href="https://nate.com" target="_blank">네이트로 가자</a>
+    <p>
+        <a href="img.html"><img src="img/mic.jpg" alt="마이크"></a>
+    </p>
+    <!-- href=mailto: 링크안에 mailto를 넣으면 이메일 보내기 링크가 열린다. -->
+    <a href="mailto:o3okre@gmail.com">이메일 보내기</a><br>
+    <!-- mailto: 누구에게 메일을 보낼것인지 이메일 주소 입력 후
+    메일 제목을 추가할 경우 ?subject=제목내용 입력 -->
+    <a href="mailto:o3okre@gmail.com?subject=문의할게요.">이메일 보내기</a>
+    <p>
+        파일연결하기<br>
+        <!-- 확장자 txt, pdf, html은 웹페이지에 열어준다. -->
+        <!-- 다운로드할 파일링크 걸 경우  -->
+        <a href="media/media.zip">다운로드</a><br>
+        <!-- 텍스트 파일 내용을 연결할 때
+        웹에서 text파일은 지원이 되기 때문에 다운로드형태가 아니라 
+        내용을 볼 수 있다. -->
+        <a href="media/text.txt">메모장 받기</a><br>
+        <!-- psd파일은 웹에서 지원받는 파일이 아니기 때문에 
+        다운로드처럼 받을 수 있다. -->
+        <a href="media/photo.psd">포토샵 받기</a>
+    </p>
+</body>
+</html>

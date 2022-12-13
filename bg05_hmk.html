@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>300페이지 과제</title>
+    <style>
+        #wrap{
+            width: 800px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            background: url(img/bg2.png) no-repeat;
+            background-position: 100% 0%;
+        }
+        .box{
+            width: 350px;
+            height: 200px;
+            border: 15px solid rgba(224, 224, 224, 0.404);
+            margin: 10px;
+            padding: 20px;
+            background: url(img/bg3.png) no-repeat;
+            background-position: 100% 0%;
+            background-size: 70px;
+            font-size: 14px;
+        }
+        #bg1{
+            background-origin: padding-box;
+        }
+        #bg2{
+            background-origin: border-box;
+        }
+        #bg3{
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="bg1">
+            <h2>바빠 시리즈</h2>
+            <h4>- 바쁜 학생을 위한 빠른 학습법</h4>
+            <p>
+                쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.
+            </p>
+        </div>
+
+        <div class="box" id="bg2">
+            <h2>바빠 시리즈</h2>
+            <h4>- 바쁜 학생을 위한 빠른 학습법</h4>
+            <p>
+                쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.
+            </p>
+        </div>
+
+        <div class="box" id="bg3">
+            <h2>바빠 시리즈</h2>
+            <h4>- 바쁜 학생을 위한 빠른 학습법</h4>
+            <p>
+                쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

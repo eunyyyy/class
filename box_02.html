@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스위치예제</title>
+    <style>
+        #wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: auto;
+            /* 절대값을 부여해줘야 하는 부모에게 상대값(relative)  */
+            position: relative;
+        }
+        .box{
+            width: 70px;
+            height: 70px;
+            background:deepskyblue;
+            /* 자식은 위치값을 절대값(absolute)으로 표시 */
+            position: absolute;
+        }
+        #child01{
+            right:0px;
+            top:0px;
+        }
+        #child02{
+            right:0px;
+            bottom: 0px;
+        }
+        #child03{
+            bottom : 0px;
+            left : 0px;
+        }
+        #child04{
+            left: 100px;
+            top: 100px;
+        }
+        #child05{
+            right: 150px;
+            bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="child01" class="box">1</div>
+        <div id="child02" class="box">2</div>
+        <div id="child03" class="box">3</div>
+        <div id="child04" class="box">4</div>
+        <div id="child05" class="box">5</div>
+    </div>
+</body>
+</html>

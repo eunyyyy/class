@@ -1,0 +1,43 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+nav{
+    padding: 20px;
+    margin: 50px;
+}
+li{
+    padding: 20px 40px;
+    display: block;
+    float: left;
+    /* display: inline-block; */
+    border:1px solid #818181;
+}
+
+li a{
+    color:#333
+}
+li:hover{
+    background:#333;
+    }
+li:hover a{
+    color: aliceblue;
+}
+li:nth-child(1){
+    /* li의 자식의 순서에 조건을 줄 때 현재는 첫번째 */
+    border-radius: 15px 0 0 15px;
+}
+li:last-child{
+    /* li의 자식의 마지막 자식에게 조건을 줄 때
+    마지막 순서는 순서 자체가 마지막이라서 ()을 주지 않는다. */
+    border-radius: 0 15px 15px 0;
+}
+/* 
+li:nth-last-child(4)
+뒤에서 몇번째 순서에 조건을 줄 때 nth(순서)와 끝에 (순서 넘버)를 주면 된다.
+*/

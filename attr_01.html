@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <!-- 2022.11.15. -->
+    <style>
+        li{
+            list-style: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        a{
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        [title="en"]{
+            background: url(img/us.png) no-repeat left center;
+        }
+        [title|="ch"]{
+            /* |= or ^=값 ~으로(값) 시작되는 선택자 */
+            /* 속성값이 "ch" 이거나 "ch-"로 시작되는 요소를 찾는 선택자 */
+            background: url(img/ch.png) no-repeat left center;
+        }
+        [title="jp"]{
+            background:url(img/jp.png)no-repeat left center;
+        }
+        p[lang|="en"]{
+            background: yellow;
+        }
+        p[lang^=e]{
+            /* 속성 값이 "e"로 시작되는 요소를 찾는 선택자 */
+            font-weight: bold;
+            color: red;
+        }
+        p[lang*=e] {
+            /* *=e
+            e를 포함한 모든 값에 적용 */
+            font-size : 30px;
+        }
+        p[lang$=e] {
+            border:2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" title="en">영어</a></li>
+        <li><a href="#" title="ch-ina">중국어</a></li>
+        <li><a href="#" title="jp">일본어</a></li>
+    </ul>
+    <hr>
+    <p lang="en">Hello</p>
+    <p lang="en-use">HI!</p>
+    <p lang="en-gb">yes</p>
+    <p lang="us">self</p>
+    <p lang="no">no</p>
+    <p lang="bye">bye</p>
+</body>
+</html>

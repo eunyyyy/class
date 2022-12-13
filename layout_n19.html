@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃19</title>
+    <style>
+        #wrap{
+            width: 600px;
+            height: 800px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 1px solid gray;
+        }
+        header{
+            width: 50%;
+            height: 800px;
+            background: salmon;
+            float: left;
+        }
+        section, footer{
+            width: 280px;
+            height: 390px;
+            margin: 0 0 0 20px;
+            background: lemonchiffon;
+            position:relative;
+            right: -300px;
+        }
+        section{
+            margin-bottom: 20px;
+        }
+        #right{
+            float: right;
+        }
+        .box{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="left">
+            <header></header>
+        </div>
+        <div class="right">
+            <section></section>
+            <footer></footer>
+            <div id = "box"></div>
+        </div>
+    </div>
+</body>
+</html>

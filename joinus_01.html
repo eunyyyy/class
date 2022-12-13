@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="joinus_01.css">
+    <title>회원가입</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 2022.11.15. -->
+    <form id="signup">
+        <fieldset>
+            <!-- <legend> 태그는 <fieldset> 요소의 캡션(caption)을 정의할 때 사용합니다. -->
+            <legend>로그인 정보</legend>
+            <ul>
+                <!-- +는 하위태그에 2개이상의 속성을 추가할때 사용 -->
+                <li>
+                    <label for="userID">아이디</label>
+                    <input type="text" id="userID" name="userID" required autofocus>
+                </li>
+                <li>
+                    <label for="pw01">비밀번호</label>
+                    <input type="password" id="pw01" name="pw01" required>
+                </li>
+                <li>
+                    <label for="pw02">비밀번호 확인</label>
+                    <input type="password" id="pw02" name="pw02" required>
+                </li>
+                <li>
+                    <label for="level">회원등급</label>
+                    <input type="text" id="level" name="level" readonly value="준회원">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="fullname">이름</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="5자 미만 공백 없이 입력하세요">
+                </li>
+                <li>
+                    <label for="email">메일 주소</label>
+                    <input type="email" id="email" name="email" placeholder="o3okre@gmail.com">
+                </li>
+                <li>
+                    <label for="tel">연락처</label>
+                    <input type="tel" id="tel" name="tel">
+                </li>
+                <li>
+                    <label for="sex">성별</label>
+                    <input type="radio" id="sex" name="sex">여성
+                    <input type="radio" id="sex" name="sex">남성
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <button type="submit">제출</button>
+            <button type="reset">취소</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
