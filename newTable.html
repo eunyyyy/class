@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div로 table로 설정</title>
+    <style>
+        .table{
+            width: 80%;
+            background: #dad9ff;
+            display: table;
+        }
+        .table-row-group{
+            display: table-row-group;
+        }
+        .table-row{
+            display: table-row;
+            height: 50px;
+        }
+        .table-cell{
+            display: table-cell;
+            border-bottom: thin solid #000;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .bold{
+            font-weight: bold;
+            color: red;
+            width: 80px;
+        }
+        /* 
+        display 속성 중 table 관련 속성
+        table -> table
+        table-caption -> caption
+        table-cell -> td
+        table-column -> col
+        table-column-group -> colgroup
+        table-row -> tr
+        table-row-group -> tbody
+        table-header-group -> thead
+        table-footer-group -> tfoot
+        */
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="table-row-group">
+            <div class="table-row">
+                <div class="table-cell bold">01</div>
+                <div class="table-cell">제목을 입력하세요.</div>
+                <div class="table-cell">2022-10-20</div>
+            </div>
+        </div>
+        <div class="table-row-group">
+            <div class="table-row">
+                <div class="table-cell bold">02</div>
+                <div class="table-cell">제목을 입력하세요.</div>
+                <div class="table-cell">2022-10-20</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경처리 영상</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+        .text {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+        }
+        .text p {
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <video autoplay loop>
+            <source src="media/Network6.mp4" type="video/mp4">
+            해당 브라우저는 video를 지원하지 않습니다.
+        </video>
+        <div class="text">
+            <p>
+                네트워크 세계를 보다
+            </p>
+        </div>
+    </div>
+</body>
+</html>

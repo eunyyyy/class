@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 21</title>
+    <style>
+        #wrap{
+            width:600px;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+        #left{
+            width: 28%;
+            height: 430px;
+            background: pink;
+            margin: 10px 0 0 10px;
+            float: left;
+        }
+        .right{
+            width: 67%;
+            float: right;
+        }
+        .box{
+            height: 100px;
+            margin: 10px 10px 10px 0;
+            background: palevioletred;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="left"></div>
+        <div class="right">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

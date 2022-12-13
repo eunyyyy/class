@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃42</title>
+    <style>
+        #wrap{
+            width: 600px;
+            border: 1px solid blueviolet;
+            margin: 0 auto;
+        }
+        header{
+            height: 200px;
+            margin: 10px;
+            background: yellowgreen;
+        }
+        .box1{
+            width: 20%;
+            height: 100px;
+            background: rgb(255, 222, 160);
+            margin: 10px;
+            float: left;
+        }
+        .box2{
+            width: 73%;
+            height: 100px;
+            background: rgb(255, 255, 105);
+            margin: 10px;
+            float: right;
+        }
+        #clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <section>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </section>
+        <footer>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </footer>
+        <div id = "clear"></div>
+    </div>
+</body>
+</html>

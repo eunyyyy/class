@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ccc;
+    padding: 20px;
+}
+#signup {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 15px;
+}
+#signup fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+#signup fieldset:last-of-type {
+    border: none;
+    margin: 0 0 15px 100px;
+}
+#signup legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 10px 5px;
+}
+#signup ul li {
+    list-style: none;
+    line-height: 30px;
+    padding: 5px 15px;
+    margin-bottom: 2px;
+}
+#signup label {
+    float: left;
+    width: 110px;
+    font-size: 14px;
+}
+#signup button {
+    border: 1px solid #222;
+    display: inline-block;
+    font-size: 16px;
+    padding: 7px 25px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+#signup input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
+#signup input[required]{
+    border : 1px solid red;
+}
+#signup input[readonly]{
+    border: none;
+}
+#signup button:hover {
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+#signup input[type="radio"]{
+    width: 30px;
+    padding: 5px;
+}
+#signup input[type="radio"]:last-of-type{
+    margin-left: 30px;
+}

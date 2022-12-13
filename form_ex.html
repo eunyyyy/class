@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        body{
+            background: white;
+        }
+        div{
+            width: 500px;
+            border: 1px solid rgb(224, 196, 144);
+            padding: 20px 30px 20px 30px;
+            border-radius: 30px;
+            margin: 60px auto;
+            background: rgb(255, 251, 244);
+            box-shadow: 3px 3px 15px rgba(230, 183, 96, 0.726);
+        }
+        p{
+            font-size: 12px;
+            color: white;
+            background: rgb(230, 183, 96);
+            width: 130px;
+            height: 20px;
+            vertical-align: middle;
+            padding: 2px 15px 2px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>2022년 11월 14일 학습</p>
+        <form>
+            <h1>필수정보</h1>
+            이름 <input type="text" placeholder="이름을 입력하세요" autofocus required maxlength="4">
+            <!-- maxlength = 4 는 최대 4자 글자 입력이 가능 -->
+            <br>
+            회원등급 <input type="text" placeholder="신입회원" readonly>
+            <br>
+            아이디 <input type="text" placeholder="아이디를 입력하세요" required>
+            <button>중복확인</button>
+            <br>
+            비밀번호 <input type="password" placeholder="숫자포함 10자 비밀번호" required>
+            <br>
+            비밀번호 확인 <input type="password" placeholder="다시 한번 비밀번호 입력" required>
+            <br>
+            <form action="">
+                <select name="tel">
+                    <option value="">선택</option>
+                    <option value="">010</option>
+                    <option value="">011</option>
+                    <option value="">016</option>
+                </select>
+                - <input type="tel" required>
+                - <input type="tel" required>
+                <button>중복확인</button>
+            </form>
+            <input type="checkbox" checked>문자(SMS)를 통한 상품, 홍보 및 이벤트 정보 수신에 동의합니다.(선택)
+            <br>
+            이메일 <input type="email" required> @ <input type="email" required>
+            <select name="email">
+                <option value="">직접입력</option>
+                <option value="">naver.com</option>
+                <option value="">gmail.com</option>
+                <option value="">daum.net</option>
+            </select>
+            <br>
+            <input type="checkbox" checked> 이메일을 통한 상품, 홍보 및 이벤트 수신에 동의합니다.(선택)
+            <br>
+            <h1>선택정보</h1>
+            <!-- 자택주소 -->
+            자택 주소 <input type="text">
+            <button>우편번호검색</button>
+            <br>
+            <input type="text" readonly>
+            <input type="text" placeholder="상세주소">
+            <br>
+            <!-- 자택 전화번호 -->
+            전화번호
+            <select name="tel">
+                <option value="">선택</option>
+                <option value="">02</option>
+            </select>
+            - <input type="text">
+            - <input type="text">
+            <br><br>
+             <!-- 직장 주소 -->
+             직장 주소 <input type="text">
+             <button>우편번호검색</button>
+             <br>
+             <input type="text" readonly>
+             <input type="text" placeholder="상세주소">
+             <br>
+             <!-- 직장 전화번호 -->
+             전화번호
+             <select name="tel">
+                 <option value="">선택</option>
+                 <option value="">02</option>
+             </select>
+             - <input type="text">
+             - <input type="text">
+             <br>
+            <!-- 생년월일 -->
+            생년월일 <input type="date">
+            양력 <input type="radio" name="date" checked>
+            음력 <input type="radio" name="date">
+            <br><br>
+            <button type="reset">취소</button>
+            <button type="submit">확인</button>
+        </form>
+    </div>
+</body>
+</html>

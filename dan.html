@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 나누기</title>
+    <style>
+        body{
+            font-family: "맑은 고딕", 고딕, 굴림;
+        }
+        div#multi{
+            width: 600px;
+            padding: 20px;
+            margin: 60px auto;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+        /* 다단 나누기 */
+        #multi{
+            /* 단의 개수 3단 */
+            column-count: 3;
+            -webkit-column-count: 3; /*접두사 처리방법*/
+            /* 단과 단의 여백 */
+            column-gap: 20px;
+            text-align: justify;
+            column-rule: 2px dotted #ccc;
+        }
+        .nocol{
+            /* 영역안의 전체단을 하나로 합치기 */
+            column-span: all;
+            /* background: #f0f0f0; */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="multi">
+        <h2>건강에 좋은 식품 - Super Food</h2>
+        <h3>코코넛 오일</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+        </p>
+
+        <h3>케일</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+        </p>
+
+        <h3>블루베리</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+        </p>
+
+        <h3>아몬드</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+        </p>
+        <div class="nocol">
+            <h3>아보카도</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+            </p>
+        </div>  
+    </div>
+</body>
+</html>

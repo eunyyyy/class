@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 44</title>
+    <style>
+        #wrap{
+            width:800px;
+            margin: 0 auto;
+            padding: 0;
+            border: 1px solid black;
+        }
+        .box1, .box2{
+            width: 380px;
+            height: 100px;
+            margin: 10px;
+            background: yellowgreen;
+        }
+        header,section{
+            width: 780px;
+            height: 100px;
+            background: yellow;
+            margin:10px;
+        }
+        .box1{
+            float: left;
+        }
+        .box2{
+            float: right;
+        }
+        #clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </aside>
+        <div id = "clear"></div>
+        <section></section>
+        <footer>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </footer>
+        <div id = "clear"></div>
+    </div>
+</body>
+</html>

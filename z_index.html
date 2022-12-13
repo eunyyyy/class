@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이어순서</title>
+    <style>
+        div{
+            width: 250px;
+            height: 350px;
+            border: 2px solid;
+            position: absolute;
+        }
+        /* z-index : 5 -> 
+        숫자가 클수록 순서가 앞으로 옴. 숫자가 작을수록 순서가 뒤로 감. */
+        #z01{
+            background:red;
+            left: 50px;
+            top: 350px;
+            z-index: 1;
+        }
+        #z02{
+            background:orange;
+            left: 80px;
+            top: 310px;
+            z-index: 2;
+        }
+        #z03{
+            background:yellow;
+            left: 110px;
+            top: 270px;
+            z-index: 3;
+        }
+        
+        #z04{
+            background:green;
+            left: 150px;
+            top: 230px;
+            z-index: 4;
+        }
+        
+        #z05{
+            background:blue;
+            left: 190px;
+            top: 270px;
+            z-index: 3;
+        }
+        
+        #z06{
+            background:navy;
+            left: 230px;
+            top: 310px;
+            z-index: 2;
+        }
+        
+        #z07{
+            background:purple;
+            left: 270px;
+            top: 350px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="z01">순서</div>
+    <div id="z02">순서</div>
+    <div id="z03">순서</div>
+    <div id="z04">순서</div>
+    <div id="z05">순서</div>
+    <div id="z06">순서</div>
+    <div id="z07">순서</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경의 적용범위 범위</title>
+    <style>
+        #wrap{
+            width: 900px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        .box{
+            width: 350px;
+            height: 300px;
+            border: 5px dotted black;
+            /* background: url(img/bg2.png) no-repeat; */
+            margin: 10px;
+            padding: 10px;
+            background:blue;
+            color: aliceblue;
+        }
+        #clip1{
+            /* 배경을 어디까지 적용할지 지정 - 테두리(border-box)까지 적용 */
+            background-clip: border-box;
+        }
+        #clip2{
+            /* 테두리를 뺀 패딩(padding)범위까지 적용 */
+            background-clip:padding-box;
+        }
+        #clip3{
+            /* 내용이 들어간 부분만 적용 */
+            background-clip:content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="clip1">끼안딘돈 수온자둤지만 사시로 으건는리의 섬엄으로. 톨겝틲허신은 브낭을 껺이 올괜구기, 오시우늣을. 온고샹이 우아다 냠오어읍건안도 잤쓰근 티웆깡거 팆댕까지, 래글도, 거이아아 굑촌습니다. 규멱아에 멀자도, 해팜둬열 호뇌 트의가 이뉨연가므가 비됴다 송우고 경둤히람 헌마다는 애잰쩔겁싱리다. 알렄낳겜은 새리닐청의 우기귝을 하라훈엑고 인페느댄 왑아너퍼 슨킨삐사의. 덤나네는 샤센찰고 타대정닉은 헐긱와뭉을 인훌다즌 쐔서렁다린이 다스반도. 핸준모농 올좔라 사오고 븐일 아후믈엔의 하조엎달엗가좀 죠기사에 갱니를 힐나쁠사르다.</div>
+        <div class="box" id="clip2">끼안딘돈 수온자둤지만 사시로 으건는리의 섬엄으로. 톨겝틲허신은 브낭을 껺이 올괜구기, 오시우늣을. 온고샹이 우아다 냠오어읍건안도 잤쓰근 티웆깡거 팆댕까지, 래글도, 거이아아 굑촌습니다. 규멱아에 멀자도, 해팜둬열 호뇌 트의가 이뉨연가므가 비됴다 송우고 경둤히람 헌마다는 애잰쩔겁싱리다. 알렄낳겜은 새리닐청의 우기귝을 하라훈엑고 인페느댄 왑아너퍼 슨킨삐사의. 덤나네는 샤센찰고 타대정닉은 헐긱와뭉을 인훌다즌 쐔서렁다린이 다스반도. 핸준모농 올좔라 사오고 븐일 아후믈엔의 하조엎달엗가좀 죠기사에 갱니를 힐나쁠사르다.</div>
+        <div class="box" id="clip3">끼안딘돈 수온자둤지만 사시로 으건는리의 섬엄으로. 톨겝틲허신은 브낭을 껺이 올괜구기, 오시우늣을. 온고샹이 우아다 냠오어읍건안도 잤쓰근 티웆깡거 팆댕까지, 래글도, 거이아아 굑촌습니다. 규멱아에 멀자도, 해팜둬열 호뇌 트의가 이뉨연가므가 비됴다 송우고 경둤히람 헌마다는 애잰쩔겁싱리다. 알렄낳겜은 새리닐청의 우기귝을 하라훈엑고 인페느댄 왑아너퍼 슨킨삐사의. 덤나네는 샤센찰고 타대정닉은 헐긱와뭉을 인훌다즌 쐔서렁다린이 다스반도. 핸준모농 올좔라 사오고 븐일 아후믈엔의 하조엎달엗가좀 죠기사에 갱니를 힐나쁠사르다.</div>
+    </div>
+</body>
+</html>

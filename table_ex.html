@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        table{
+            width: 500px;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            border-collapse: collapse;
+        }
+        th,tr,td{
+            border: 1px dotted gray;
+            border-left: 0px none;
+            border-right: 0px none;
+            padding: 6px;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>링크 걸리 글자에 스타일을 부여하는 것입니다.</caption>
+        <tr>
+            <th>속성</th>
+            <th>풀이</th>
+        </tr>
+        <tr>
+            <td>link</td>
+            <td>링크선택자</td>
+        </tr>
+        <tr>
+            <td>visted</td>
+            <td>이미 방문한 선택자</td>
+        </tr>
+        <tr>
+            <td>hover</td>
+            <td>마우스가 닿았을 경우 선택자</td>
+        </tr>
+        <tr>
+            <td>active</td>
+            <td>활성화되었을 때 선택자</td>
+        </tr>
+        <tr>
+            <td>focus</td>
+            <td>글자에 포커스가 생길 경우의 선택자</td>
+        </tr>
+    </table>
+</body>
+</html>

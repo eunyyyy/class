@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 만들기</title>
+    <style>
+        body{
+            background: #fffdda;
+        }
+        ol{
+            list-style: none;
+        }
+        ul.img{
+            color: red;
+            list-style-image: url(img/dot.png);
+            list-style-position:inside;
+        }
+        ul#menu{
+            list-style: none;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        ul#menu li{
+            /* display 명령어를 줄 경우 width값을 주면 
+            텍스트 크기에 따라 잘릴 수 있기 때문에 width값을 적용하지 않고
+            display로만 제어해준다.  */
+            /* width: 80px; */
+            padding: 10px;
+            border: 1px solid red;
+            /* 보여주는 방식 설정 */
+            display: inline-block;
+            background: darkcyan;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>봄</li>
+            <li>여름</li>
+            <li>가을</li>
+            <li>겨울</li>
+        </ol>
+        <ul class="img">
+            <li>계절</li>
+            <li>계절</li>
+            <li>계절</li>
+            <li>계절</li>
+        </ul>
+        <ul id="menu">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+</body>
+</html>

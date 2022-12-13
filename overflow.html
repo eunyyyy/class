@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div{
+            width: 180px;
+            height: 350px;
+            border: 1px solid;
+            float: left;
+            margin: 15px;
+            padding: 10px;
+        }
+        /* 영역을 벗어났을 때 처리 방법 overflow (기본 : visible) */
+        #over1{
+            /* 영역을 벗어난 것은 보이지 않게 */
+            overflow:hidden;
+        }
+        #over2{
+            /* 영역을 벗어나면 왼쪽, 아래 무조건 스크롤 생성 */
+            overflow:scroll;
+        }
+        #over3{
+            /* 영역을 버 ㅅ어나면 필요한 곳에만 스크롤 생성 */
+            overflow:auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="over1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hortatore effecerit iure impediri aiebat proin inpendente praeceptrice profecta dictas, menandri. Medicorum dolores intellegam praeclara voluptate curabitur, amicum servare iucunditate, labefactant. Astris intellegebat facilis fugiendis amicorum tradidisse insequitur augeri maxime. Bonum cedentem aristotelem, eidola verterem ponti mucius. Profecto posse fecerit aptius, pugnare fortunae. Maximeque sagittis quisquis vestibulum animos parvam fuga. Iudicem magnos erat sagittis nosque.</div>
+    <div id="over2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hortatore effecerit iure impediri aiebat proin inpendente praeceptrice profecta dictas, menandri. Medicorum dolores intellegam praeclara voluptate curabitur, amicum servare iucunditate, labefactant. Astris intellegebat facilis fugiendis amicorum tradidisse insequitur augeri maxime. Bonum cedentem aristotelem, eidola verterem ponti mucius. Profecto posse fecerit aptius, pugnare fortunae. Maximeque sagittis quisquis vestibulum animos parvam fuga. Iudicem magnos erat sagittis nosque.</div>
+    <div id="over3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hortatore effecerit iure impediri aiebat proin inpendente praeceptrice profecta dictas, menandri. Medicorum dolores intellegam praeclara voluptate curabitur, amicum servare iucunditate, labefactant. Astris intellegebat facilis fugiendis amicorum tradidisse insequitur augeri maxime. Bonum cedentem aristotelem, eidola verterem ponti mucius. Profecto posse fecerit aptius, pugnare fortunae. Maximeque sagittis quisquis vestibulum animos parvam fuga. Iudicem magnos erat sagittis nosque.</div>
+</body>
+</html>

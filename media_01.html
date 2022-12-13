@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어</title>
+</head>
+<body>
+    <!-- 원본 크기로 들어오지 않지만 영상그대로 가져와서 자동재생이 된다. -->
+    <!-- 원본크기가 아니기 때문에 크기를 직접 지정해줘야 한다. -->
+    <embed src="media/flower.mp4" type="video/mp4" width="640px" height="360px">
+    <div>
+        <!-- 
+        영상 원본 크기로 들어오지만 바로 영상으로 재생되지 않는다.
+        controls : 이미지를 영상으로 변환하여 보여주며 
+        자동재생이 아닌 유저가 직접 플레이를 누를 수 있도록 된다.
+        autoplay : 자동 재생할 수 있도록 해준다.
+        loop : 영상 무한 재생  -->
+        <video src="media/flower.mp4" controls autoplay loop></video>
+    </div>
+
+    <div>
+        <!-- 크기 제어는 source가 아닌 video 태그에 직접 width + hight값을 적용하여 크기를 조절해준다. -->
+        <video autoplay loop muted width="640px" hight="360px">
+            <!-- muted 음소거 -->
+            <!-- source : 단독태그 -->
+            <source src="media/salad.mp4" type="video/mp4">
+            현재 브라우저에서는 video를 지원하지 않습니다.
+        </video>
+    </div>
+    <div>
+        <!-- 음악을 사용자가 직접 제어 & 음소거 처리 -->
+        <audio src="media/spring.mp3" controls muted></audio>
+    </div>
+    <div>
+        <!-- 배경음악 & 자동플레이 -->  
+        <audio src="media/spring.mp3" autoplay loop></audio>
+    </div>
+    <!-- 영상이나 음악을 제외한 문서를 삽입할 때 -->
+    <div>
+        <object data="media/photo 복사.pdf" width="500" height="500">포토샵 다운로드</object>
+        <object data="media/text.txt"></object>
+<!-- img map -->
+    </div>
+</body>
+</html>

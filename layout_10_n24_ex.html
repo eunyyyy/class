@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 24</title>
+    <style>
+        #wrap{
+            width: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer{
+            height: 150px;
+            background: lightcyan;
+            margin-bottom: 10px;
+        }
+        section, article{
+            width: 47.5%;
+            background: lemonchiffon;
+            height: 350px;
+            margin: 10px;
+            float: left;
+        }
+        footer{
+            /* clear는 float의 형태를 제거한다. */
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <section></section>
+        <article></article>
+        <footer></footer>
+    </div>
+</body>
+</html>

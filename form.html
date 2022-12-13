@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양식(폼) - 쌍방데이터처리</title>
+</head>
+<body>
+    <form>
+        <label for="text">텍스트 필드
+            <!-- autofocus는 하나만 선택하여 입력폼을 강조 -->
+            <input type="text" autofocus>
+        </label>
+        <br>
+        메일<input type="email" placeholder="abcd@daum.net">
+        <br>
+        비밀번호<input type="password" placeholder="대소문자 구분하여 영문과 특수문자를 혼합하여 사용해주세요">
+        <br>
+        전화<input type="tel" placeholder="전화번호를 입력해주세요">
+        <br>
+        검색창 <input type="search">
+        <button>검색</button>
+        <br>
+        숫자 <input type="number" min="1" max="10" step="0.5">
+        <br>
+        범위 <input type="range">
+        <br>
+        색상 <input type="color">
+        <br>
+        월 <input type="month">
+        <br>
+        주 <input type="week">
+        <br>
+        날짜<input type="date">
+        <br>
+        시간 <input type="time">
+        <br>
+        날짜 시간 <input type="datetime">
+        <br>
+        로컬날짜시간 <input type="datetime-local">
+        <br>
+        버튼 <input type="button" value="확인">
+        <!-- 
+            둘다 동일하다.
+            <button>검색</button> -> 많이 사용함 (자유롭게 사용가능하기 때문)
+            <input type="button" value="확인"> -> 버튼의 정석
+        -->
+        <br>
+        파일찾기 <input type="file">
+        <br>
+        <!-- radio button의 종류를 1개만 선택하도록 조건을 걸때
+        모든 조건에 동일한 name값을 부여 
+        기본 값을 체크된 상태로 부여할 때 checked를 부여함.-->
+        성별(라디오버튼) 남성 <input type="radio" name="sex"> 여성 <input type="radio" name="sex" checked>
+        <br>
+        선택창
+        <select name="tel" id="">
+            <option value="선택하세요">:::선택:::</option>
+            <option value="">010</option>
+            <option value="">011</option>
+            <option value="">016</option>
+            <option value="">017</option>
+        </select>    
+        <br>
+        <label>여러줄입력</label>
+        <!-- tap키가 눌려있으면 들여쓰기가 적용된다 -->
+        <textarea name="memo" id="memo" cols="100" rows="10">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verear atomi dicitis plerisque laudantium proprius sit p quidam severitatem. Interiret nisl conducunt percipitur meminerunt sagittis locupletiorem motum hac quippe scribendi. Sequatur iure allevatio explicatis pacem legantur stabilem opinemur dissident quis. Instituit maximeque artifex confidere movere. Zenonem moribus posset, excepturi platone animadvertat amicorum studia salutatus putanda. Omnem maiores disserendi suscipere semel. Efflorescere discordans necessariae voluptati reliquisti fruenda. Corporisque magistra omnisque collegi qui desideraturam.
+        </textarea>
+        <br>
+        당신의 취미는? (체크박스)
+        <input type="checkbox"> 등산
+        <input type="checkbox" checked> 영화
+        <input type="checkbox"> 만화
+        <input type="checkbox"> 자전거
+        <input type="checkbox" checked> 여행
+        <input type="checkbox"> 기타 <input type="text">
+    </form>
+    <hr>
+    <form action="">
+        <input type="text" required>
+        <input type="text">
+        <input type="text" required>
+        <input type="email" value="email" readonly>
+        <!-- readonly = 읽기전용(입력불가) -->
+        <!-- submit = 실행하겠다는 버튼 -->
+        <!-- required = 필수항목 -->
+        <button type="submit">다음</button>
+    </form>
+    <!-- 
+    새로운 속성 정리 
+     - autofocus : 입력커서 표시 (페이지당 1군데만 가능)
+     - placeholder : 내용 힌트 표시
+     - required : 필수항복 입력(미 입력시 경고창 뜸)
+     - readonly : 읽기전용(입력불가)
+     - autocomplete : 자동완성기능 제어(on-사용, off-비사용)
+     -> autocomplete은 누적된 데이터값을 기반으로 사용하기 떄문에 
+     나중에 사용 예정
+    -->
+</body>
+</html>
