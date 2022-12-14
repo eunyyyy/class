@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-14 -->
+    <script>
+        let x = 10; //전역변수
+        function numFnc(){
+            let y = 20;
+            document.write(`x is ${x} <br>`);
+            document.write(`y is ${y}`);
+            //let y = 20; // 출력 먼저 후 아래에서 선언하면 출력을 먼저 인식하기 떄문에 오류가 뜬다. 
+                          // 자바스크립트는 호이스팅 문제로 인해 코드 작성시 위치도 중요하다.
+        }
+        numFnc();
+    </script>
+    <title>호이스팅</title>
+</head>
+<body>
+    
+</body>
+</html>

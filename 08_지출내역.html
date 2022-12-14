@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-08 -->
+    <script>
+        var payTrans = Number(prompt("지출한 교통비 내역을 입력해주세요","3000"));
+        var payMeals = Number(prompt("지출한 식비 내역을 입력해주세요","6000"));
+        var payDrink = Number(prompt("지출한 음료비 내역을 입력해주세요","3000"));
+        var total = payDrink+payMeals+payTrans;
+        result = total>10000?total-10000+"원 초과 하였습니다.":"돈 관리 잘했어요!"
+
+        document.write("총 지출내역은 "+total+"이고, "+result);
+
+        // 선생님 답안
+        // var price1 = 3000;
+        // var price2 = 6000;
+        // var price3 = 3000;
+
+        // var total=price1+price2+price3;
+        // var result=total>10000?total-10000+"원 초과":"돈 관리를 잘 했어요!"
+        // document.write(result)
+    </script>
+    <title>지출 내역</title>
+</head>
+<body>
+    
+</body>
+</html>

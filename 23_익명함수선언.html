@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-13 -->
+    <script>
+        // var num1 = 4;
+        // var num2 = 3;
+        // var sum = num1+num2;
+
+        // alert(`결과값 : ${sum}`);
+
+        // addNumber가 function 앞으로 오면 참조 변수가 된다.
+        function addNumber (num1, num2){
+            // var num1 = 4;
+            // var num2 = 3;
+            var sum = num1+num2;
+            alert(`결과값 : ${sum}`);
+        }
+        addNumber(4,3);
+        addNumber(20,60);
+        addNumber(54,24);
+
+        // 참조 변수 선언(익명함수)
+        var add = function(num1, num2){
+            var sum = num1+num2;
+            alert(`결과값 : ${sum}`);
+        }
+        add(5,25);
+        add(55,225);
+    </script>
+    <title>익명 함수 정의</title>
+</head>
+<body>
+    
+</body>
+</html>

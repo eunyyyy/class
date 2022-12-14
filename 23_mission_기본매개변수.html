@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-13 -->
+    <script>
+        //미션 정보
+        // 매개변수 name(이름). wage(시급), hours(시간)
+        //이름, 시급, 시간을 출력하고 최종 급여 출력
+        //시급 기본 값 : 9,160원
+        //시간 40시간
+        //--------------------------------------
+
+        // 내 답안
+        
+        function earnings (name,wage,hours){
+            document.write(`# ${name} 님의 급여 정보 <br>`);
+            document.write(`- 시급 : ${wage}원  <br>`);
+            document.write(`- 근무 시간 : ${hours}시간 <br>`);
+            document.write(`- 급여 : ${wage*hours}원 <br><br>` ); //사칙연산 할때 ${}값 안에 *,+,-,% 넣어서 계산해주기
+        }
+        earnings("구름",8590,40);
+        earnings("별",10000,40);
+        earnings("인성",10000,52);
+
+        //--------------------------------------
+
+        //선생님 답안
+        // 값을 따로 입력하지 않거나 기본 값을 고정하고 싶다면 매개변수에 wage=9160 으로 설정할 경우 기본값이 설정된다.
+        // 매개변수의 초기값을 넣어주면 인수가 없으면 그대로 출력한다. 
+        // function earnings(name,wage=9160,hours=40){
+        //     document.write(`#${name} 님의 급여 정보 <br>`);
+        //     document.write(`- 시급 : ${wage}원 <br>`);
+        //     document.write(`- 근무시간 : ${hours}원 <br>`);
+        //     document.write(`- 급여 : ${wage*hours}원 <br><br>`);
+        // }
+        // earnings("구름");
+        // earnings("별", 10000);
+        // earnings("인성", 10000,52);
+    </script>
+    <title>매개변수 미션 - 최저 시급 함수 구하기</title>
+</head>
+<body>
+    
+</body>
+</html>

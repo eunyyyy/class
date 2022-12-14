@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-12 -->
+    <script>
+        for(i=1; i<=5; i++){
+            for(j=1; j<=5; j++){
+                document.write(`*`);
+            }
+            document.write(`<br>`);
+        }
+
+        // // 삼각형 만들기
+        for(i=1; i<=5; i++){
+            for(j=1; j<=i; j++){
+                document.write(`*`);
+            }
+            document.write(`<br>`);
+        }
+        // // 역삼각형 만들기
+        // for(i=1; i<=5; i++){
+        //     for(j=5; j>=i; j--){
+        //         document.write(`*`);
+        //     }
+        //     document.write(`<br>`);
+        // }
+
+        // 역삼각형 선생님 답
+        for(i=5; i>=1; i--){
+            for(j=1; j<=i; j++){
+                document.write(`*`);
+            }
+            document.write(`<br>`);
+        }
+    </script>
+    <title>별 만들기</title>
+</head>
+<body>
+    
+</body>
+</html>
