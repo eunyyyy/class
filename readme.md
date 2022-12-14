@@ -4,5 +4,5 @@
 
 | Date       | name      | Link                  |
 | ---------- | --------- | --------------------- |
-| 2022-12-14 | Layout 11 | [링크 삽입 예정][PlGh] |
-| 2022-12-13 | Layout 09 | [링크 삽입 예정][PlGh] |
+| 2022-12-14 | Layout 11 | [https://eunyyyy.github.io/class/layout11.html] |
+| 2022-12-13 | Layout 09 | [https://eunyyyy.github.io/class/layout09.html] |
