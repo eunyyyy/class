@@ -1,0 +1,14 @@
+<!-- 2022-12-14 -->
+<script>
+    let num = 500; //전역변수
+    function fncTest(){
+        let num = 200;
+        function innerFnc(){
+            document.write(`${num} <br>`);
+        }
+        innerFnc ();
+    }
+    fncTest();
+    document.write(`${num} <br>`);
+
+</script>

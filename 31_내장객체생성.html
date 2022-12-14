@@ -1,0 +1,37 @@
+<!-- 2022-12-14 -->
+<script>
+    let car = new Object();
+    car.color = 'red';
+    car.price = 300000;
+    car.info = function(){
+        document.write(`car 색상 ${this.color} <br>`);
+        document.write(`car 가격 ${this.price} <br>`);
+        document.write(`<br><hr>`);
+    }
+    document.write(`<h1>car 객체 메서드 호출 </h1>`);
+    car.info();
+    //자기 자신을 this라고 한다. 변수를 호출할 때 해당 변수 = this
+
+    // let tv = new Object();
+    // tv.color = 'Black';
+    // tv.price = 1500000;
+    // tv.brand = 'Samsung';
+    // tv.info = function (){
+    //     document.write(`<b>TV 색상 : </b> ${this.color} <br>`);
+    //     document.write(`<b>TV 가격 : </b> ${this.price}원 <br>`);
+    //     document.write(`<b>TV 브랜드 : </b> ${this.brand} <br>`);
+    // }
+    // 아래 리터럴방식으로 변경
+    let tv = {
+        color : 'yellow',
+        price : 1000,
+        brand : 'Samsung',
+        info : function(){
+            document.write(`<b>TV 색상 : </b> ${this.color} <br>`);
+            document.write(`<b>TV 가격 : </b> ${this.price}원 <br>`);
+            document.write(`<b>TV 브랜드 : </b> ${this.brand} <br>`);
+        }
+    }
+    document.write(`<h2> 신규 객체 </h2>`);
+    tv.info();
+</script>

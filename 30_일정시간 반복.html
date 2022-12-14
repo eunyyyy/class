@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-14 -->
+    <title>일정시간 반복</title>
+</head>
+<body>
+    <button onclick="clearInterval(auto_1)">증가정지</button>
+    <button onclick="clearInterval(auto_2)">감소정지</button>
+    <!-- onclick(마우스를 클릭한다면) = 이벤트, clearInterval  -->
+    <script>
+        let addNum = 0;
+        let subNum = 100;
+
+        let auto_1 = setInterval(
+            function(){
+                addNum++;
+                console.log(`addNum : ${addNum} 번째`);
+            }, 3000 //3000 = 3초
+        );
+        let auto_2 = setInterval(
+            function(){
+                subNum--;
+                console.log(`subNum : ${subNum} 번째`);
+            }, 3000
+        )
+
+        // setInterval(실행코드, 반복주기(시간 ms))
+    </script>
+</body>
+</html>
