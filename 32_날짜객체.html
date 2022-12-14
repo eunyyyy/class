@@ -1,0 +1,27 @@
+<!-- 2022-12-14 -->
+<script>
+    let today = new Date();
+    let nowMonth = today.getMonth()+1; 
+    //현재 월에서 -1로 출력 되기 때문에 현재월은 +1을 해줘야 한다.
+    let nowDate = today.getDate();
+
+    document.write(`<h1>오늘 날짜 정보</h1>`);
+    document.write(`현재 월 : ${nowMonth}월 <br>`);
+    document.write(`현재 일 : ${nowDate}일 <br>`);
+
+    // 요일 구하기
+    let nowDay = today.getDay();
+    document.write(`현재 요일 : ${nowDay}요일`);
+    document.write(`<br><br>`);
+
+    // 생일의 년, 월, 요일 구하기
+    let birth = new Date(1995,12,8); //특정 날짜를 알아보고 싶을때 사용 
+    let birthYear = birth.getFullYear();
+    let birthMonth = birth.getMonth(); //현재 데이터 값이 아닌 특정 값을 적용한 상태에서 값을 구할때 +1 적용하지 않는다.
+    let birthDay = birth.getDay();
+
+    document.write(`<h2>내 생일 정보</h2>`);
+    document.write(`태어난 년도 : ${birthYear}년 <br>`);
+    document.write(`태어난 월 : ${birthMonth}월 <br>`);
+    document.write(`태어난 요일 : ${birthDay}요일 <br>`);
+</script>
