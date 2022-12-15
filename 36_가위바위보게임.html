@@ -1,0 +1,42 @@
+<!-- 2022-12-15 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.write(`<h1>컴퓨터 가위 바위 보 맞추기<h1>`);
+
+        // 사용자에게 받는다.
+        let game = prompt('가위, 바위, 보 중에 하나를 선택해서 입력 해 주세요.','가위'); 
+        let gameImg;
+        // 스위치문
+        switch (game){
+            case "가위" : gameImg="";
+            break;
+            case "바위" : gameImg="";
+            break;
+            case "보" : gameImg="";
+            break;
+            default : alert('잘못 입력하였습니다.');
+        }
+        
+        let com = Math.ceil(Math.random()*3);
+        document.write(`<img src="images/math_img_${com}.jpg">`);
+        document.write(``);
+
+        if(gameImg == com){
+            document.write(`맞췄네요.`);
+        }else{
+            document.write(`틀렸네요. 다음 기회에`);
+        }
+
+        document.write(`${gameImg}`);
+        //문자열, 이미지 단독적으로 사용
+        //이미지 파일명은 최대한 같게 하고 뒤에 "_숫자"로 입력해두는 것이 나중에 입력값을 랜덤으로 돌릴때 수정하기 용이하다.
+        //파일명 숫자를 랜덤으로 돌리고 싶을 경우 경로+파일명입력후 랜덤으로 돌리려고 하는 숫자 부분만 ${해당 함수}.jpg(이미지 확장자)
+    </script>
+    <title>수학 객체 활용(가위,바위,보 게임)</title>
+</head>
+<body>
+</body>
+</html>
