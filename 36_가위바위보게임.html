@@ -11,26 +11,26 @@
         let gameImg;
         // 스위치문
         switch (game){
-            case "가위" : gameImg="";
+            case "가위" : gameImg="1";
             break;
-            case "바위" : gameImg="";
+            case "바위" : gameImg="2";
             break;
-            case "보" : gameImg="";
+            case "보" : gameImg="3";
             break;
             default : alert('잘못 입력하였습니다.');
         }
         
         let com = Math.ceil(Math.random()*3);
         document.write(`<img src="images/math_img_${com}.jpg">`);
-        document.write(``);
+        // document.write(``);
 
         if(gameImg == com){
-            document.write(`맞췄네요.`);
+            document.write(`<img src="images/game_1.jpg">`);
         }else{
-            document.write(`틀렸네요. 다음 기회에`);
+            document.write(`<img src="images/game_2.jpg">`);
         }
 
-        document.write(`${gameImg}`);
+        // document.write(`${gameImg}`);
         //문자열, 이미지 단독적으로 사용
         //이미지 파일명은 최대한 같게 하고 뒤에 "_숫자"로 입력해두는 것이 나중에 입력값을 랜덤으로 돌릴때 수정하기 용이하다.
         //파일명 숫자를 랜덤으로 돌리고 싶을 경우 경로+파일명입력후 랜덤으로 돌리려고 하는 숫자 부분만 ${해당 함수}.jpg(이미지 확장자)
