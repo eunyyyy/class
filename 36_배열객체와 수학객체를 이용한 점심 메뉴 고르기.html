@@ -1,0 +1,17 @@
+<!-- 2022-12-15 -->
+<!-- 배열 객체와 수학 객체를 이용한 점심 메뉴 고르기 -->
+<script>
+    // 내 답안
+    // var menu = ['김치찌개','순대국밥','마라탕','떡볶이','쌀국수'];
+    // var result = Math.random();
+
+    // document.write(`오늘의 메뉴 : ${menu} <br>`);
+    // document.write(menu.length,'<br>');
+
+    // 선생님 답안
+    let menu = ["짜장면","돈가스","된장국","김치찌개","회덮밥"];
+    let menuNum = Math.floor(Math.random()*menu.length); //계산 목적
+    // random은 난수값이기 때문에 배열값으로 변환하려면 해당 함수 menu+.length길이를 곱하면 된다.
+    let lunch = menu[menuNum];
+    document.write(lunch);
+</script>
