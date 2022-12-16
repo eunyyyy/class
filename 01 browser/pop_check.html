@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-16 -->
+    <script>
+        // function openPop(){
+        //     let newWin = window.open('notice.html','pop','width=500,height400');
+        //     if(newWin == null){
+        //         alert('팝업이 차단되었습니다. 팝업 차단을 해제해주세요.');
+        //     }
+        // }
+        function openPop(){
+            let newWin = window.open('popup.html','pop','width=500,height400');
+            if(newWin == null){
+                alert('팝업이 차단되었습니다. 팝업 차단을 해제해주세요.');
+            }
+        }
+    </script>
+    <title>팝업창 체크</title>
+</head>
+<body onload="openPop()">
+    <p>문서를 열면 팝업창이 표시 됩니다.</p>
+</body>
+</html>

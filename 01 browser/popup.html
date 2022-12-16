@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 2022-12-16 -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #wrap {           
+            /* background: black;  */
+            width: 650px;
+            height: 820px;
+            /* width: 400px;
+            height: 505px; */
+            background-image: url(img/popup_1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        button {
+            font-size: 5rem;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        #wrap>div {
+            position: relative;
+            top: 768px;
+            color: white;
+            text-align: center;
+            padding: 14px 15px;
+            background: rgb(169, 53, 64);
+        }
+        #wrap>a {
+            padding: 14px 15px;
+            padding-right: 475.1px;
+            /* padding-right: 225px; */
+            position:relative;
+            /* top: 512px; */
+            top: 780px;
+            left: 0;
+            font-size: 14px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <title>팝업창 띄우기</title>
+</head>
+<body>
+    <div id="wrap">
+        <div>본 이벤트는 별도의 공지가 없을 경우 무기한으로 진행됩니다.</div>
+        <button onclick="javascript:window.close();">×</button>
+        <a onclick="javascript:window.close();">오늘 하루 동안 보지 않기</a>
+    </div>
+</body>
+</html>

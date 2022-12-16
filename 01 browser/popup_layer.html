@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-16 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #ccc;
+            background-image: url(img/gs25.png);
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+        p {
+            font-size: 1.4rem;
+            margin-left: 30px;
+            font-weight: bold;
+
+        }
+        /* pre {
+            font-size: 1.2em;
+            font-style: oblique;
+            column-width: 200px;
+        } */
+        /* 첫번째 팝업 */
+        /* .popup {
+            background: white;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .popup button {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            background: none;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+        }
+        #notice {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            z-index: 1000;
+            border-radius: 20px;
+        } */
+        .popup {
+            width: 400px;
+            height: 545px;
+            background: ivory;
+            border-radius: 15px;
+            background-image: url(img/popup_2.png);
+            position: absolute;
+            z-index: 1001;
+            top: 250px;
+            left: 500px;
+        }
+        .popup button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: black;
+            color: #fff;
+            position: relative;
+            top: 504px;
+            border-radius: 0 0 15px 15px;
+            cursor: pointer;
+            /* position: absolute;
+            bottom: 20px;
+            right: 30px;
+            font-size: 0.8em;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            /* background: none; */
+            /* border: 1px solid #ccc; */
+        }
+        #notice {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            z-index: 1000;
+            border-radius: 20px;
+        }
+
+        /* 두번째 팝업 */
+        #notice2 {
+            width: 400px;
+            height: 545px;
+            background: ivory;
+            border-radius: 15px;
+            background-image: url(img/popup_1.png);
+            position: absolute;
+            z-index: 1001;
+            top: 250px;
+            left: 500px;
+        }
+        .popup2 > button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: black;
+            color: #fff;
+            position: relative;
+            top: 504px;
+            border-radius: 0 0 15px 15px;
+            cursor: pointer;;
+        }
+
+    </style>
+    <title>레이어 팝업창</title>
+</head>
+<body>
+    <!-- <p>💌 문서를 열면 레이어 팝업창이 그대로 보인다.</p>
+    <hr> -->
+    <!-- pre = 입력한 그대로 띄어쓰기, 줄바꿈 모두 적용 -->
+    <!-- <pre>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Permulta inquit miseram tantam salutatus mel, ius astris videntur. 
+    Amicis eoque reprehendunt, pervenias declinare putant essent ignoratione, hominibus urbes.
+    Egestas detraxisse, virtutum labor contemnere ferre logikh iam sanciret.
+    Voluntates numeris, evolutio grate, athenis suis summis domo importari.
+    Via rutilius lucilius poetarum nixam. 
+    
+    Commodi opinor adquiescere optimi suscipere fortasse gerendarum antiquis dissentiet disserui.
+    Audaces honesto praeceptrice quam conformavit amicitiam nostras.
+    Sublata erga dicent pararetur reici facultas solitudo fugiat tantam tamquam.
+    Procedat firmissima divinum, odio dissentias percipiatur. Exultat suscipiantur operis dissentias, triarius inclusae.
+    Inflammati imagines carum quondam expectata infinitis complectitur illi poena quas.
+    Defuturum tincidunt, diceretur tractatos solvantur, praeceptrice maiorum hominem.
+    Notissima ignota scribi posuere cur saperet stoicos securi municipem, urbane. 
+
+    Fecit posse arbitraretur paulo atomi pendet prosperum militaris.
+    Temperantiam litteras desiderant semper dicenda, andriam.
+    Aristippi putanda nimis occultum provincias stabilique conquisitis plerumque improbe.
+    Epicurus verterunt platone quiete nimium scipio recordamur epicurei superstitio iam. Legant arare, disserunt vocet interdictum adoptionem. Mei iudico fodere habent reliquarum medicorum explicabo.
+    Satisfacit continens posidonium statim hoc sensum re ambigua viveremus partis.
+    Amicos relinqueret leguntur qualisque expetendis. Multoque ostendis tantum insequitur conficiuntur forensibus etsi. 
+    
+    Opera dolere tristique expectant faciunt multo appellantur ridiculus fortitudinis illustribus.
+    Nulla petentium conferebamus democritus alteram minorem, explicavi saluti appareat ne.
+    Magnus maxime etenim scribimus exeamus accusata leniter adversantur nescius corrupte.
+    Gravitate nulla sagittis ratio cotidieque honesto dolorum.
+    Maiores motum torquent, albam tarentinis fruentem, conducunt veterum virtutem homines quantumcumque.
+    Voluptate deterritum nam suscipiet, praeclaram. Imitarentur extremo habent dum familias licet epicuro servata.
+    Supplicii quoquo pharetra corporum quaerendi praeda vera delectat. 
+    
+    Existimavit patet aliquos sententiae vi alias amentur primo ratio levius.
+    Videri quibusdam illo, bono tuum virtutes commodis concursionibus filium.
+    Probabo gratia minuti primis iudiciorumque concordia partitio iusto diesque, sublata.
+    Impeditur diis intellegaturque optinere silano concupiscunt reprehenderit, elaboraret legimus exitum.
+    Dissentiet abest ultricies eas expeteremus explicatis.
+    Utrisque democritum incommoda torquatis multis omittantur morbis malis admirer dicant.
+    Perturbatur virtutem, utinam sale fautrices defuit gravitate hortensio totum.
+    Num detraxisse probaretur primus octavio.
+    Exedunt monstruosi, quorum liber conscientia comprehenderit perfunctio impediri sapientium. 
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Permulta inquit miseram tantam salutatus mel, ius astris videntur. 
+    Amicis eoque reprehendunt, pervenias declinare putant essent ignoratione, hominibus urbes.
+    Egestas detraxisse, virtutum labor contemnere ferre logikh iam sanciret.
+    Voluntates numeris, evolutio grate, athenis suis summis domo importari.
+    Via rutilius lucilius poetarum nixam. 
+    
+    Commodi opinor adquiescere optimi suscipere fortasse gerendarum antiquis dissentiet disserui.
+    Audaces honesto praeceptrice quam conformavit amicitiam nostras.
+    Sublata erga dicent pararetur reici facultas solitudo fugiat tantam tamquam.
+    Procedat firmissima divinum, odio dissentias percipiatur. Exultat suscipiantur operis dissentias, triarius inclusae.
+    Inflammati imagines carum quondam expectata infinitis complectitur illi poena quas.
+    Defuturum tincidunt, diceretur tractatos solvantur, praeceptrice maiorum hominem.
+    Notissima ignota scribi posuere cur saperet stoicos securi municipem, urbane. 
+
+    Fecit posse arbitraretur paulo atomi pendet prosperum militaris.
+    Temperantiam litteras desiderant semper dicenda, andriam.
+    Aristippi putanda nimis occultum provincias stabilique conquisitis plerumque improbe.
+    Epicurus verterunt platone quiete nimium scipio recordamur epicurei superstitio iam. Legant arare, disserunt vocet interdictum adoptionem. Mei iudico fodere habent reliquarum medicorum explicabo.
+    Satisfacit continens posidonium statim hoc sensum re ambigua viveremus partis.
+    Amicos relinqueret leguntur qualisque expetendis. Multoque ostendis tantum insequitur conficiuntur forensibus etsi. 
+    
+    Opera dolere tristique expectant faciunt multo appellantur ridiculus fortitudinis illustribus.
+    Nulla petentium conferebamus democritus alteram minorem, explicavi saluti appareat ne.
+    Magnus maxime etenim scribimus exeamus accusata leniter adversantur nescius corrupte.
+    Gravitate nulla sagittis ratio cotidieque honesto dolorum.
+    Maiores motum torquent, albam tarentinis fruentem, conducunt veterum virtutem homines quantumcumque.
+    Voluptate deterritum nam suscipiet, praeclaram. Imitarentur extremo habent dum familias licet epicuro servata.
+    Supplicii quoquo pharetra corporum quaerendi praeda vera delectat. 
+    
+    Existimavit patet aliquos sententiae vi alias amentur primo ratio levius.
+    Videri quibusdam illo, bono tuum virtutes commodis concursionibus filium.
+    Probabo gratia minuti primis iudiciorumque concordia partitio iusto diesque, sublata.
+    Impeditur diis intellegaturque optinere silano concupiscunt reprehenderit, elaboraret legimus exitum.
+    Dissentiet abest ultricies eas expeteremus explicatis.
+    Utrisque democritum incommoda torquatis multis omittantur morbis malis admirer dicant.
+    Perturbatur virtutem, utinam sale fautrices defuit gravitate hortensio totum.
+    Num detraxisse probaretur primus octavio.
+    Exedunt monstruosi, quorum liber conscientia comprehenderit perfunctio impediri sapientium. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Permulta inquit miseram tantam salutatus mel, ius astris videntur. 
+    Amicis eoque reprehendunt, pervenias declinare putant essent ignoratione, hominibus urbes.
+    Egestas detraxisse, virtutum labor contemnere ferre logikh iam sanciret.
+    Voluntates numeris, evolutio grate, athenis suis summis domo importari.
+    Via rutilius lucilius poetarum nixam. 
+    
+    Commodi opinor adquiescere optimi suscipere fortasse gerendarum antiquis dissentiet disserui.
+    Audaces honesto praeceptrice quam conformavit amicitiam nostras.
+    Sublata erga dicent pararetur reici facultas solitudo fugiat tantam tamquam.
+    Procedat firmissima divinum, odio dissentias percipiatur. Exultat suscipiantur operis dissentias, triarius inclusae.
+    Inflammati imagines carum quondam expectata infinitis complectitur illi poena quas.
+    Defuturum tincidunt, diceretur tractatos solvantur, praeceptrice maiorum hominem.
+    Notissima ignota scribi posuere cur saperet stoicos securi municipem, urbane. 
+
+    Fecit posse arbitraretur paulo atomi pendet prosperum militaris.
+    Temperantiam litteras desiderant semper dicenda, andriam.
+    Aristippi putanda nimis occultum provincias stabilique conquisitis plerumque improbe.
+    Epicurus verterunt platone quiete nimium scipio recordamur epicurei superstitio iam. Legant arare, disserunt vocet interdictum adoptionem. Mei iudico fodere habent reliquarum medicorum explicabo.
+    Satisfacit continens posidonium statim hoc sensum re ambigua viveremus partis.
+    Amicos relinqueret leguntur qualisque expetendis. Multoque ostendis tantum insequitur conficiuntur forensibus etsi. 
+    
+    Opera dolere tristique expectant faciunt multo appellantur ridiculus fortitudinis illustribus.
+    Nulla petentium conferebamus democritus alteram minorem, explicavi saluti appareat ne.
+    Magnus maxime etenim scribimus exeamus accusata leniter adversantur nescius corrupte.
+    Gravitate nulla sagittis ratio cotidieque honesto dolorum.
+    Maiores motum torquent, albam tarentinis fruentem, conducunt veterum virtutem homines quantumcumque.
+    Voluptate deterritum nam suscipiet, praeclaram. Imitarentur extremo habent dum familias licet epicuro servata.
+    Supplicii quoquo pharetra corporum quaerendi praeda vera delectat. 
+    
+    Existimavit patet aliquos sententiae vi alias amentur primo ratio levius.
+    Videri quibusdam illo, bono tuum virtutes commodis concursionibus filium.
+    Probabo gratia minuti primis iudiciorumque concordia partitio iusto diesque, sublata.
+    Impeditur diis intellegaturque optinere silano concupiscunt reprehenderit, elaboraret legimus exitum.
+    Dissentiet abest ultricies eas expeteremus explicatis.
+    Utrisque democritum incommoda torquatis multis omittantur morbis malis admirer dicant.
+    Perturbatur virtutem, utinam sale fautrices defuit gravitate hortensio totum.
+    Num detraxisse probaretur primus octavio.
+    Exedunt monstruosi, quorum liber conscientia comprehenderit perfunctio impediri sapientium. 
+    </pre> -->
+    <!-- 레이어 팝업창(가장 위 혹은 가장 아래 작성) -->
+    <div id ="notice" class="popup">
+        <!-- <h1>공지사항</h1>
+        <ul>
+            <li>항목1</li>
+            <li>항목2</li>
+            <li>항목3</li>
+            <li>항목4</li>
+            <li>항목5</li>
+        </ul> -->
+        <button>닫기</button>
+    </div>
+    <div id ="notice2" class="popup2">
+        <button>닫기</button>
+    </div>
+    <script>
+        //🟠자주 사용하니 까먹지 말기🟠
+        var closeBtn = document.querySelector('.popup>button');
+        closeBtn.addEventListener('click',function(){
+            document.querySelector('.popup').style.display='none';
+            // document.querySelector('body').style.background='red';
+            //선택인자 : document.querySelector('.popup')
+            //style.display='none' = 팝업을 안보이게 해준다.
+        });
+        //Btn=button
+        //document = body 안에 있는 태그를 찾아서 처리하랄는 뜻.
+        //.addEventListener 이벤트 처리기
+
+        // 두번째 팝업
+        var closeBtn = document.querySelector('.popup2>button');
+        closeBtn.addEventListener('click',function(){
+            document.querySelector('.popup2').style.display='none';
+        });
+    </script>
+</body>
+</html>
