@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 2022-12-19 -->
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            width: 500px;
+            margin: 15px auto;
+        }
+        #display {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid seagreen;
+            box-shadow: 1px 0 1px #ccc;
+        }
+        p {
+            font-size: 1em;
+        }
+        button {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>location Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>location 객체</h1>
+        <div id="display">
+            <!-- 자바스크립트 코드문 -->
+            <script>
+                document.write(`<p><b>location.href : </b> ${location.href} </p>`); //실무에서 자주 사용
+                document.write(`<p><b>location.host : </b> ${location.host} </p>`); //실무에서 자주 사용
+                document.write(`<p><b>location.protocol : </b> ${location.protocol} </p>`); //실무에서 자주 사용
+                //.host = 로컬(크롬에서 파일열기로 오픈할 때)에서는 나오지 않고 서버에 존재(라이브 서버로 확인 가능)하고 있을 때만 노출이 된다.
+            </script>
+        </div>
+        <button onclick="location.replaces('http://daum.net')">다음 홈페이지로 이동하기</button> <!-- 왜 링크가 안열리냥 -->
+    </div>
+</body>
+</html>

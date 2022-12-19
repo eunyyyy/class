@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 2022-12-19 -->
+    <meta charset="UTF-8">
+    <script>
+        //(매개변수) 괄호안의 매개변수(변수 이름)는 사용자 임의 정의 가능하다.
+        function openCenter(doc, win, w, h){
+            let left = (screen.availWidth-w)/2; //팝업창의 왼쪽 좌표
+            let top = (screen.availHeight-h)/2;//팝업창의 위쪽 좌표
+            let opt = 'left='+left+', top ='+top+', width ='+w+', height='+h;
+            // 스크린의 너비값 / 2 = 양쪽 너비 여백값 구하기 때문 
+            window.open (doc, win,opt); //창(파일 이름), 대상, 사이즈(width,height)
+        }
+        openCenter('notice.html', 'pop', 500,400);//가로값 먼저 세로값 숫자만 입력
+
+        function openCenter(doc, win, w, h){
+            let left=(screen.availWidth-w)/3;
+            let top=(screen.availHeight-h)/4;
+            let opt='left='+left+', top ='+top+', width ='+w+', height='+h;
+            window.open (doc, win, opt);
+        }
+        openCenter('popup.html', 'pop', 505, 600);
+    </script>
+    <title>브라우저 창에 가운데 팝업 띄우기</title>
+</head>
+<body>
+    <p>문서를 열면 팝업창이 가운데 표시 됩니다.</p>
+</body>
+</html>

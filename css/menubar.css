@@ -1,0 +1,81 @@
+/* 
+::before / ::after 설명
+1. ::before 역할 - 선택한 엘리먼트(태그) 앞에 가상 콘텐츠를 삽입하는 역할
+2. ::after 역할 - 선택한 엘리먼트 위에 가상 콘텐츠를 삽입하는 역할
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0 30px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between;
+    /* 컨텐츠 사이의 간격을 균등하게 처리, 양 끝 여백은 처리되지 않는다. */
+    box-sizing: border-box;
+    /* border 안쪽으로 들어 오라고 box-sizing : border-box 값을 부여한다. */
+}
+header h1 {
+    padding: 20px 0;
+}
+header > #gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    /* 양끝 여백까지 균등하게 배치 */
+}
+
+header> #gnb::before {
+    /* 컨텐츠 빈공간 출력 */
+    content: "";
+    width: 100%;
+    position:absolute;
+    top: 85px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 10px 10px 0px rgba(48,49,51,6%);
+    display: block;
+    height: 180px;
+}
+header>#gnb::before {
+    display: none;
+}
+header>#gnb.on::before {
+    display: block;
+}
+header > #gnb> li .snb{
+    position: absolute;
+    top: 100px;
+    display: none; 
+    /*일시적으로 메뉴를 안보이도록 해야하기 때문에 overflow:hidden이 아니라 display:none으로 처리한다.*/
+}
+
+header >#gnb.on >li .snb{
+    display: block; /*마우스 올라갈때 메뉴가 나타나도록 효과를 주고 싶다면 block 처리*/
+}
+
+header > #gnb > li > .snb > ul > li+li {
+    margin-top: 20px;
+}
+/* li+li는 첫번째 li 이후 두번째 li부터 효과를 똑같이 처리하기 위해 설정 */
+#util {
+    padding: 20px 0;
+}
