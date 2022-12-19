@@ -13,15 +13,23 @@
         // sum = 200; //sum 재할당 가능
         // document.write(`<br>${sum}`);
 
-        function addNumber(){
-            var sum = 20+30; 
-            document.write(`결과값 : ${sum}`);
-        }
-        addNumber();
-        sum = 200; //sum 재할당 가능
-        document.write(`<br>${sum}`);
-        let sum = 20; //let 재 선언 불가능
+        // function addNumber(){
+        //     var sum = 20+30; 
+        //     document.write(`결과값 : ${sum}`);
+        // }
+        // addNumber();
+        // sum = 200; //sum 재할당 가능
+        // document.write(`<br>${sum}`);
+        // let sum = 20; //let 재 선언 불가능
 
+        function myfnc(){
+            var sum = 10+20; //지역변수
+            multi = 10*20;    //var나 let을 선언 안하고 함수를 사용 한다면 지역변수가 아닌 전역변수가 된다. 
+            console.log(sum);
+        }
+        myfnc();
+        // console.log(sum); (지역변수를 스코프 밖에서 호출하면 정의되지 않았다고 오류가 난다.)
+        console.log(multi); // (전역변수는 어디서 호출해도 상관 없다.)
     </script>
     <title>지역변수와 전역변수</title>
 </head>
