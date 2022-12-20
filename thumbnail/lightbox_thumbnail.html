@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 2022-12-20 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/thumbnail.css">
+    <title>상세_썸네일 자세히 보기</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#">The Wine's</a></h1>
+            <ul id="gnb">
+                <li><a href="#">What's Wine</a></li>
+                <li><a href="#">Wine's Story</a></li>
+                <li><a href="lightbox_thumbnail.html">Wine's label</a></li>
+                <li><a href="#">Support Us</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>Wine's label</h1>
+            <p>🍷🍸 와인 덕후가 알려주는 와인 라벨 해석 하는 방법!</p>
+        </main>
+        <section>
+            <div class="items">
+                <ul>
+                  <li>                    
+                    <img src="img//f_small1.png" data-src="img//f_big1.png" class="fr">
+                    <h3>Chardonnay</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small2.png" data-src="img//f_big2.png" class="fr">
+                    <h3>Sauvignon Blanc</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small3.png" data-src="img//f_big3.png" class="fr">
+                    <h3>Riesling</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small4.png" data-src="img//f_big4.png" class="fr">
+                    <h3>Villa Muscatel</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small5.png" data-src="img//f_big5.png" class="fr">
+                    <h3>Champagne</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small6.png" data-src="img//f_big6.png" class="fr">
+                    <h3>White Zinfandel</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small7.png" data-src="img//f_big7.png" class="fr">
+                    <h3>Frontera</h3>
+                </li>
+                  <li>
+                    <img src="img/f_small8.png" data-src="img//f_big8.png" class="fr">
+                    <h3>Sea Ridge</h3>
+                </li>
+                </ul>    
+              </div>
+              <div id="bigbox">
+                      <img src="img/f_small1.png" alt="큰 이미지" id="bigboxImg">	
+              </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script>
+      let imgs = document.getElementsByClassName('fr');
+      let bigbox = document.getElementById('bigbox');
+      let bigboxImg = document.getElementById('bigboxImg');
+
+      for(i=0; i<imgs.length; i++){
+        imgs[i].addEventListener('click', showLightbox);
+      }
+      function showLightbox(){
+        let bigImg = this.getAttribute('data-src');
+        bigboxImg.setAttribute('src', bigImg);
+        // bigbox.style.display='block';  
+      }
+    </script>
+</body>
+</html>
