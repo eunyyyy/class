@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!-- 2022-12-21 -->
+<head>
+    <meta charset="UTF-8">
+    <script>
+        //창이 로드 될때 아래 구문을 실행
+        //window.onload 뒤에 = function(함수) ()을 입력하지 않으면 구문이 완벽해도 실행되지 않는다.
+        // window.onload = function() {
+        //     let p = document.querySelector('#red');
+        //     p.addEventListener('mouseover', over);
+        //     p.addEventListener('mouseout', out);
+
+        //     function over(){
+        //         p.style.backgroundColor='red';
+        //     }
+        //     function out(){
+        //         p.style.backgroundColor='';
+        //     }
+        //}
+
+        //익명함수로 리스너 작성하기
+        let p = document.querySelector('#red');
+
+        p.onmouseover = function(){
+            //선언을 했기 때문에 p를 다시 언급하지 않고 this(자기자신)으로 대체 가능.
+            this.style.backgroundColor='red';
+        }
+        p.mouseout = function(){
+            this.style.backgroundColor='';
+        }
+
+    </script>
+    <title>마우스 오버시 배경색 처리</title>
+</head>
+<body>
+    <p id="red">마우스 올리면 붉은색 배경으로 처리</p>
+</body>
+</html>

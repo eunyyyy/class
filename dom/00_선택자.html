@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!-- 2022-12-20 -->
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            //document.querySeletor('태그 #아이디 .클래스 중 하나만 입력');
+            // 태그 선택자
+            const h1 = document.querySelector('h1').style.color='red'
+            // 아이디 선택자
+            document.querySelector('#header').style.backgroundColor='orange';
+            //클래스 선택자
+            document.querySelector('.tt').style.textAlign='center';
+            // 속성 선택자 - [type=text] : 적용 대상에서 해당 타입에만 적용
+            document.querySelector('[type=text]').style.borderRadius='10px';
+            // 후손 선택자
+            document.querySelector('body input').style.backgroundColor='blue';
+            // querySelector는 무조건 첫번째 대상에만 적용 한다.
+        })
+    </script>
+    <title>선택자</title>
+</head>
+<body>
+    <h1 id="header" class="tt">반갑습니다.</h1>
+    <input type="text">
+    <input>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 2022-12-13 -->
     <link rel="stylesheet" href="css/menubar.css">
+    <script src="js/menubar.js"></script>
     <title>하위 메뉴 만들기</title>
 </head>
 <body>
@@ -61,5 +62,26 @@
             </ul>
         </header>
     </div>
+
+    <!-- <script>
+        let gnb = document.querySelectorAll('#gnb>li');
+        let gnbElement = document.querySelector('#gnb');
+
+        //마우스 클릭 했을 때 이벤트 발생
+        for(i=0; i<gnb.length; i++){
+            gnb[i].addEventListener('mouseover',function(){
+                gnbElement.classList.add('on'); //classList 라는 명령어가 있어서 ('on')-> "."이 안붙는다.
+            });
+        }
+
+        let headerElement = document.querySelector('header');
+        //마우스 클릭 해제 했을 때 이벤트 발생
+        //event를 약자로 e로 주로 사용
+        headerElement.addEventListener('mouseout',function(e){
+            if(e.target.id=='gnb'){
+                gnbElement.classList.remove('on');
+            }
+        });
+    </script> -->
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!-- 2022-12-20 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #wrap {
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        #rect {
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgb(189, 107, 134);
+            margin: 30px auto;
+            /* 변형속도 */
+            /* transition: 속도, transform :  */
+            transition: 1s;
+            cursor: pointer;
+        }
+    </style>
+    <title>사각형에서 원형으로</title>
+</head>
+<body>
+    <div id="wrap">
+        <p>도형 위에 마우스 포인터를 올려 놓으세요.</p>
+        <div id="rect"></div>
+    </div>
+
+    <script>
+        let myRect = document.querySelector('#rect');
+        // myRect.addEventListener(이벤트,함수,캡처 여부);
+        // 이벤트에 on을 붙이지 않는다.
+        //mouseover = 마우스가 해당 위치에 올라온다면 이벤트 발생
+        myRect.addEventListener('mouseover',function(){
+            myRect.style.borderRadius='50%';
+            myRect.style.backgroundColor='pink';
+        });
+
+        // mouseout = 마우스가 벗어났다면 이벤트 발생
+        myRect.addEventListener('mouseout',function(){
+            myRect.style.borderRadius='';
+            myRect.style.backgroundColor='pink';
+        });
+    </script>
+</body>
+</html>

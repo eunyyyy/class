@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 2022-12-20 -->
+    <title>innerText, innerHTML</title>
+</head>
+<body>
+    <button onclick="inText();">innerText로 표시하기</button>
+    <button onclick="inHTML();">innerHTML로 표시하기</button>
+    <h1>현재시각 : </h1>
+    <div id="current"></div>
+
+    <script>
+        let now = new Date();
+        
+        // 첫번째 버튼 클릭했을 때 실행문
+        function inText(){
+            document.querySelector('#current').innerText=`<em>${now}</em>`
+            // querySelector 어디에 누구를 입력할 것인지 대상(아이디명)
+            // 🏳‍🌈 함수, 변수 조건 입력 후 실행 대상(button)에 호출을 해야 적용이 된다.
+        }
+        function inHTML(){
+            document.querySelector('#current').innerHTML=`<em>${now}</em>`
+        }
+    </script>
+</body>
+</html>

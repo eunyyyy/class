@@ -1,0 +1,29 @@
+<!-- 2022-12-20 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            //문서 객체 생성하는 태그
+            //💡상수(const)는 선언 할 때 값을 담아야 한다.
+            //create 만들기
+            const header = document.createElement('h1'); 
+            
+            //생성한 태그 조작하기
+            header.textContent='문서 객체 동적으로 생성하기';
+            header.style.color='#fff';
+            header.style.backgroundColor='#000';
+            header.style.padding='15px';
+
+            //h1태그를 body태그 아래에 추가하기
+            //append : 추가하기 
+            document.body.appendChild(header);
+        });
+    </script>
+    <title>문서 객체 동적으로 생성하기</title>
+</head>
+<body>
+    
+</body>
+</html>

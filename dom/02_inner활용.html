@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!-- 2022-12-20 -->
+<head>
+    <meta charset="UTF-8">
+    <title>inner 활용</title>
+</head>
+<body>
+    <h1>The element Object</h1>
+    <h2>The innerHTML property</h2>
+    <p id="myP">This is a p element</p>
+    <div id="myDiv">This is a div element</div>
+
+    <script>
+        // let text = 'Hello';
+        // document.querySelector('#myP').innerHTML=text;
+        // document.querySelector('#myDiv').innerHTML=text;
+
+        //<em>은 중요한 문자 강조할 때 사용, <i>는 이탤릭체 형태는 같아도 용도가 다르다.
+        document.querySelector('#myP').innerHTML=`<em>내용처리</em>`;
+        document.querySelector('#myDiv').innerText=`<em>내용처리</em>`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+  </head>
+  <body>
+    <div class="row">
+      <ul>
+        <!-- 
+          src : html 사양에서 정의된 기능적인 의미를 가지고 있다.
+          data-src : 의미 없음 정의하지만 스크립트에서 사용되는 소자
+         -->
+        <li><img src="img//tree-1-thumb.jpg" data-src="img//tree-1.jpg" class="pic"></li>
+        <li><img src="img//tree-2-thumb.jpg" data-src="img//tree-2.jpg" class="pic"></li>
+        <li><img src="img//tree-3-thumb.jpg" data-src="img//tree-3.jpg" class="pic"></li> 
+        <li><img src="img//tree-4-thumb.jpg" data-src="img//tree-4.jpg" class="pic"></li>
+        <li><img src="img//tree-5-thumb.jpg" data-src="img//tree-5.jpg" class="pic"></li>
+        <li><img src="img//tree-6-thumb.jpg" data-src="img//tree-6.jpg" class="pic"></li>          
+      </ul>    
+    </div>
+    <div id="lightbox">
+			<img src="img/tree-1.jpg" alt="" id="lightboxImage">
+    </div>
+    <!-- 스크립트 -->
+    <script>
+      let pics = document.getElementsByClassName('pic');
+      //.pic인 요소들을 가져와 변수 pics에 저장(=querySelectorAll('.pic')로 대체해도 가능하다.)
+      let lightbox = document.getElementById('lightBox');
+      let lightboxImage = document.getElementById('lightboxImage');
+      
+      for(i=0; i<pics.length; i++){
+        pics[i].addEventListener('click',showLightbox);
+      }
+      //addEventListener를 사용할 때 on click이 아닌 ('click')라고 한다.
+      function showLightbox(){
+        let bigImg = this.getAttribute('data-src'); 
+        //this.data-src;
+        lightboxImage.setAttribute('src', bigImg);
+        //이미지(src)를 클릭 하자 마자 큰이미지(data-src)로 변경해주라는 것이다. 
+        lightbox.style.display='block';
+      }
+      
+      // //click 이벤트가 발생했을 때 실행한 함수 선언
+      // lightbox.onclick = function(){
+      //   lightbox.style.display='none';
+      // }
+    </script>
+  </body>
+</html>
