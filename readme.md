@@ -5,6 +5,7 @@
 | Date       | name      | Link                  |
 | ---------- | --------- | --------------------- |
 | ---------- | INDEX | [https://eunyyyy.github.io/class/] |
+| 2022-12-22 | 아코디언 | [[https://eunyyyy.github.io/class/thumbnail/lightbox_thumbnail.html](https://eunyyyy.github.io/class/accordion%20menu/aco_hmk.html)] |
 | 2022-12-20 | 썸네일 미리보기 | [https://eunyyyy.github.io/class/thumbnail/lightbox_thumbnail.html] |
 | 2022-12-19 | 상세정보 더보기 | [https://eunyyyy.github.io/class/detail.html] |
 | 2022-12-16 | 팝업 만들기 | [https://eunyyyy.github.io/class/popup/popup_layer.html] |
