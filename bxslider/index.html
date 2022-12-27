@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 2022-12-26 -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true, //slide 자동 실행 여부 = true, false:실행X
+                //mode:'horizontal' //가로
+                mode : 'fade' //투명
+                // slide 방향 설정 (기본값 : horizontal), vertical, fade
+            });
+        });
+    </script>
+    <title>슬라이드</title>
+</head>
+<body>
+    <div id="wrap">
+        <ul class="slider">
+            <li><img src="img/photo1.jpeg" alt="풍경"></li>
+            <li><img src="img/photo2.jpeg" alt="풍경"></li>
+            <li><img src="img/photo3.jpeg" alt="풍경"></li>
+            <li><img src="img/photo4.jpeg" alt="풍경"></li>
+            <li><img src="img/photo5.jpeg" alt="풍경"></li>
+            <li><img src="img/photo6.jpeg" alt="풍경"></li>
+        </ul>
+    <div>bxslider</div>
+    </div>
+</body>
+</html>
